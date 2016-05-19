@@ -11,6 +11,10 @@ services:
     environment:
       - VERSION=LATEST
       - EULA=TRUE
+      - MAX_PLAYERS=4
+      - ENABLE_COMMAND_BLOCK=true
+      - LEVEL=boobs
+      - SEED=-2089467411
     tty: true
     stdin_open: true
     restart: always
