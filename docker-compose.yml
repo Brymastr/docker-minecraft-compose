@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    container_name: bryviercraft
+    ports:
+      - '25565:25565'
+    volumes:
+      - '/data/bryviercraft/:/data'
+    environment:
+      - VERSION=LATEST
+    tty: true
+    stdin_open: true
+    restart: always
